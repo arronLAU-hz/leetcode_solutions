@@ -5,6 +5,7 @@ class Solution:
         seen = {}
         for i, x in enumerate(nums):
             need = target - x
+            print(f"i={i}, x={x}, need={need}, seen(before)={seen}")
             if need in seen:
                 return [seen[need], i]
             seen[x] = i
