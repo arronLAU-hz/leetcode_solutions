@@ -1,10 +1,10 @@
 def main(nums):
-    Checked = set()
+   # Checked = set()
     Results = []
     for num in nums:
-        if num not in Checked:
+        if num not in Results:
             Results.append(num)
-            Checked.add(num)
+           # Checked.add(num)
     return Results
 
 nums = [3,5,3,1]

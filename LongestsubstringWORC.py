@@ -11,7 +11,7 @@ class Solution:
                 left = last_idx[ch] + 1
 
             last_idx[ch] = right
-
+            print(last_idx)
             ans = max(ans, right - left + 1)
 
         return ans
